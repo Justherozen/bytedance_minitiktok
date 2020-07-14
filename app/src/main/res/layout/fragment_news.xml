@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".News">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.25" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.75" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="64dp"
+                android:layout_height="39dp"
+                android:layout_below="@id/imageView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="32dp"
+
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginBottom="-3dp"
+                android:text=" 粉丝"
+                android:textColor="#F1E5E5" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="27dp"
+                android:layout_marginBottom="48dp"
+                app:srcCompat="@drawable/fans" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                app:srcCompat="@drawable/like"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/imageView"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/imageView"
+                android:baselineAlignBottom="false" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView2"
+                android:layout_alignLeft="@id/imageView2"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentBottom="false"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="10dp"
+                android:text=" 赞"
+                android:textColor="#ECE0E0" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                app:srcCompat="@drawable/email"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/imageView2"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/imageView2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView3"
+                android:layout_alignBottom="@id/textView2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="205dp"
+                android:layout_marginLeft="205dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-10dp"
+                android:text="\@我的"
+                android:textColor="#ECE0E0" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                app:srcCompat="@drawable/comment"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/imageView3"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@id/imageView3" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="308dp"
+                android:layout_marginLeft="308dp"
+                android:layout_marginTop="12dp"
+                android:text="评论"
+                android:textColor="#E2D5D5" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/news_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/news_rv_item">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+</FrameLayout>
