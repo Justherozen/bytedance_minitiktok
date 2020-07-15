@@ -7,7 +7,28 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
     tools:context=".MainActivity">
+    <Button
+        android:id="@+id/confirm_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="500dp"
+        android:background="#EA1E1E"
+        android:text="post"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/cancel_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:background="#AE7777"
+        android:text="cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/confirm_post"
+        app:layout_constraintEnd_toEndOf="@+id/relativelayout"
+        app:layout_constraintTop_toTopOf="@+id/confirm_post" />
     <RelativeLayout
         android:id="@+id/relativelayout"
         android:layout_width="match_parent"

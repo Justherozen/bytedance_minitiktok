@@ -30,7 +30,7 @@ public class SplashScreen extends BaseActivity {
 
             @Override
             public void onFinish() {
-                startActivity(new Intent(SplashScreen.this, MainActivity.class));
+                startActivity(new Intent(SplashScreen.this, LoginActivity.class));
                 finish();
             }
         }.start();
