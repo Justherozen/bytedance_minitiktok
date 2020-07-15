@@ -30,12 +30,12 @@ public class VideoPlayer extends AppCompatActivity {
         setContentView(R.layout.activity_video_player);
         videoView = findViewById(R.id.video_view);
         tvAuthor = findViewById(R.id.player_tv_author);
-        tvInfo = findViewById(R.id.player_tv_info);
+        //tvInfo = findViewById(R.id.player_tv_info);
         avatar = findViewById(R.id.player_iv_avatar);
         like = findViewById(R.id.like);
         videoView.setVideoPath(getIntent().getStringExtra("video_path"));
         tvAuthor.setText("@" + getIntent().getStringExtra("author"));
-        tvInfo.setText(getIntent().getStringExtra("info"));
+        //tvInfo.setText(getIntent().getStringExtra("info"));
         avatar.setImageResource(getIntent().getIntExtra("avatar", 0));
         like.setVisibility(View.GONE);
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
