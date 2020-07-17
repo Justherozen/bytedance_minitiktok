@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000"
+    android:layout_height="match_parent">
+    <!--<VideoView-->
+    <!--android:id="@+id/video_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+    <com.example.minitiktok.tool.FullScreenVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/love2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="120dp">
+
+        <TextView
+            android:id="@+id/player_tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" @大致爱高清"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+
+
+        <com.example.minitiktok.tool.MarqueeTextView
+            android:id="@+id/player_tv_info"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text=" @这里是滚动播放的视频描述233333"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp">
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="60dp">
+
+            <com.example.minitiktok.tool.CircleImageView
+                android:id="@+id/player_iv_avatar"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_girl" />
+            <ImageView
+                android:id="@+id/iv_gz"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:background="@drawable/gz"
+                android:scaleType="centerInside"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_dz"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:drawableTop="@mipmap/e"
+            android:layout_marginTop="16dp"
+            android:text="1.6w"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_pl"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:drawableTop="@mipmap/c"
+            android:layout_marginTop="16dp"
+            android:text="1.6w"
+            android:textColor="#fff"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_zf"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:drawableTop="@mipmap/f"
+            android:layout_marginTop="16dp"
+            android:text="1.6w"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            />
+        <RelativeLayout
+            android:id="@+id/rl_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="15dp">
+
+            <ImageView
+                android:id="@+id/iv_record"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/ic_record" />
+
+            <com.example.minitiktok.tool.CircleImageView
+                android:id="@+id/player_iv_headicon"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                app:ease_radius="15dp"
+                android:scaleType="centerCrop"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_play"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/play_arrow"
+        android:clickable="true"
+        android:focusable="true"
+        android:alpha="0"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
