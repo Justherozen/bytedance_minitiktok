@@ -4,11 +4,6 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-/**
- * create by libo
- * create on 2020-05-21
- * description 跑马灯textview
- */
 public class MarqueeTextView extends TextView {
 
     public MarqueeTextView(Context context) {

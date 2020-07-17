@@ -1,12 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.androidkun:XTabLayout:1.1.4@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4d9584b498e8dd3b73728e68d6ae73be/jetified-XTabLayout-1.1.4/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7f386dfb7c7a4f452b6354a68bacc381/jetified-XTabLayout-1.1.4/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4d9584b498e8dd3b73728e68d6ae73be/jetified-XTabLayout-1.1.4/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4d9584b498e8dd3b73728e68d6ae73be/jetified-XTabLayout-1.1.4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4d9584b498e8dd3b73728e68d6ae73be/jetified-XTabLayout-1.1.4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7f386dfb7c7a4f452b6354a68bacc381/jetified-XTabLayout-1.1.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7f386dfb7c7a4f452b6354a68bacc381/jetified-XTabLayout-1.1.4/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.androidkun/XTabLayout/1.1.4/1d17c84f623d87ad6da6e5f68ac2dc0bbdb8ad39/XTabLayout-1.1.4-javadoc.jar!/" />

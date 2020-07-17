@@ -29,7 +29,7 @@ public class GridVideoAdapter extends BaseRvAdapter<VideoBean, GridVideoAdapter.
     @Override
     protected void onBindData(GridVideoViewHolder holder, VideoBean videoBean, int position) {
         holder.ivCover.setBackgroundResource(videoBean.getCoverRes());
-        holder.tvContent.setText(videoBean.getContent());
+        holder.tvContent.setText("这里是视频内容描述");
         ///holder.tvDistance.setText("666km");
         holder.ivHead.setImageResource(videoBean.getUserBean().getHead());
 
